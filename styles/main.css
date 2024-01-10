@@ -1,0 +1,30 @@
+@import url(./fonts.css);
+
+:root{
+    --opensans:"Open Sans";
+    --primary-blue:#0EB4C1;
+    --secondeary-red:#DE2E54;
+    --white:#FFF;
+    --opensansCondensed: "Open Sans Condensed"
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 1130px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
