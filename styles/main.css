@@ -1,30 +1,58 @@
 @import url(./fonts.css);
 
-:root{
-    --opensans:"Open Sans";
-    --primary-blue:#0EB4C1;
-    --secondeary-red:#DE2E54;
-    --white:#FFF;
+:root {
+    --opensans: "Open Sans";
+    --primary-blue: #0EB4C1;
+    --secondeary-red: #DE2E54;
+    --white: #FFF;
     --opensansCondensed: "Open Sans Condensed"
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-.container{
+
+.container {
     max-width: 1130px;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+
+.all-btn {
+    max-width: 189px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--secondeary-red);
+    padding-bottom: 12px;
+    color: var(--white);
+    font-family: var(--opensansCondensed);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid var(--secondeary-red);
+}
+
+.all-btn:hover {
+    background-color: var(--white);
+    color: var(--secondeary-red);
+}
+
+.all-btn:active{
+    background-color: var(--secondeary-red);
+    color: var(--white);
+    opacity: .6;
 }
