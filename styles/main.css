@@ -5,6 +5,7 @@
     --primary-blue: #0EB4C1;
     --secondeary-red: #DE2E54;
     --white: #FFF;
+    --dark: #222;
     --opensansCondensed: "Open Sans Condensed"
 }
 
@@ -34,6 +35,8 @@ ul {
     max-width: 189px;
     width: 100%;
     border-radius: 8px;
+    text-align: center;
+    padding: 12px 0;
     background-color: var(--secondeary-red);
     padding-bottom: 12px;
     color: var(--white);
@@ -51,8 +54,118 @@ ul {
     color: var(--secondeary-red);
 }
 
-.all-btn:active{
+.all-btn:active {
     background-color: var(--secondeary-red);
     color: var(--white);
     opacity: .6;
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    font-family: var(--opensans);
+}
+
+
+.site-header {
+    padding: 24px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.logo:hover {
+    color: var(--secondeary-red);
+}
+
+.logo:active {
+    opacity: .6;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.site-header__menu {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.site-header__item {}
+
+.site-header__link {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.site-header__link:hover {
+    color: var(--secondeary-red);
+}
+
+.site-header__link:active {
+    opacity: .6;
+}
+
+.site-hero {
+    background-color: var(--primary-blue);
+    padding-top: 29px;
+}
+
+.site-hero__title {
+    max-width: 500px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: var(--opensansCondensed);
+    line-height: 43.2px;
+}
+
+.site-header__text {
+    max-width: 440px;
+    width: 100%;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+
+.site-hero__btn{
+    padding: 12px 24px;
+
+}
+
+.site-hero__btn:hover {
+    border-radius: 8px;
+    background-color: rgba(222, 46, 84, 0.80);
+    color: var(--white);
+}
+
+.site-hero__image{
+    max-width: 423px;
+    width: 100%;
+    height: 504px;
+    object-fit: cover;
 }
